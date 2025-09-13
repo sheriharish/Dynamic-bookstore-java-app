@@ -23,9 +23,9 @@ public class BookDAO {
 	private Connection jdbcConnection;
 	
 	public BookDAO(String jdbcURL, String jdbcUsername, String jdbcPassword) {
-		this.jdbcURL = jdbcURL;
-		this.jdbcUsername = jdbcUsername;
-		this.jdbcPassword = jdbcPassword;
+		this.jdbcURL = "jdbc:mysql://database-5.c6vs4o66iy2e.us-east-1.rds.amazonaws.com:3306/Bookstore?useSSL=false&serverTimezone=UTC";
+		this.jdbcUsername = "admin";
+		this.jdbcPassword = "kRERuWdwM5W56STdDlf3";
 	}
 	
 	protected void connect() throws SQLException {
